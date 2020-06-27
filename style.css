@@ -1,0 +1,14 @@
+*{
+    padding:0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*LOGO*/
+.logo{
+    width:2rem;
+    height: 2rem;
+    z-index: 1;
+    position: absolute;
+    top:2rem;
+    left:6rem;
+}
