@@ -9,8 +9,11 @@
         <a href="https://icons8.com/icon/82486/beef-burger">Beef Burger icon by Icons8</a> free favicon
     -->
     <link rel="shortcut icon" href="https://img.icons8.com/cotton/64/000000/beefburger.png" type="image/x-icon">
-    
+    <!--ROBOTO LINK-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP LINK-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS LINK-->
     <link rel="stylesheet" href="style.css">
     <title>My Restaurant</title>
 </head>
@@ -19,20 +22,27 @@
     <!--
         <a href='https://www.freepik.com/free-photos-vectors/logo'>Logo vector created by freepik - www.freepik.com</a>
     -->
-    <!--NAVBAR-->
+    <div class="page--container">
+    <!--HAMBURGER MENU-->
+    <div class="container-hamb" onclick="openHamburger(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <!--RESERVATION MENU -->
+    <button type="button" class="mybtn" onclick="#">RESERVATION</button>
 
-    <!---PICTURE-->
-
-  
-
+    
+</div>
 
 
 
 
 
-
-
-
-
+    <script>
+        function openHamburger(x) {
+          x.classList.toggle("change");
+        }
+        </script>
 </body>
 </html>

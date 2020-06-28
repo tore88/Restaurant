@@ -1,7 +1,73 @@
+
 *{
     padding:0px;
     margin: 0;
     box-sizing: border-box;
-   
+}
+/*PAGE CONTAINER*/
+.page--container{
+background-image: url(/background.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 67rem;
+
+}
+/*HAMBURGER MENU*/
+.container-hamb {
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(138,104,19);
+    width: 4rem;
+    height: 4rem;  
+  }
+  .container-hamb:hover {
+      background-color: rgb(83,62,11);
+      color: white;
+  }
+  
+  .bar1, .bar2, .bar3 {
+
+    text-align: center;
+    width: 2rem;
+    height: 5px;
+    background-color: white;
+    margin:6px ;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  /*RESERVATION MENU*/
+.mybtn{
+    z-index: 10;
+    position: fixed;
+    top:0;
+    right:0;
+    width: 9rem;
+    height: 4rem;
+    background-color: rgb(138,104,19);
+    color: white;
+    font-family: 'Roboto','Times New Roman';
+    border: none;
+}
+.mybtn:hover{
+    background-color: rgb(83,62,11);
+    color: white;
+    font-weight: bold;
+}
+.my-img{
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left:0
 
 }
