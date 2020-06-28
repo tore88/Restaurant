@@ -1,1 +1,10 @@
 git@github.com:tore88/Restaurant.git
+
+…or create a new repository on the command line
+echo "# Restaurant" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:tore88/Restaurant.git
+git push -u origin master
+                
