@@ -5,18 +5,27 @@
     box-sizing: border-box;
 }
 /*PAGE CONTAINER*/
+/*@media only screen and (max-width: 800px) {
+    .page--container{
+        min-height: 40rem;
+    }*/
 .page--container{
-background-image: url(/background.jpeg);
+background-image: url(background.jpeg);
 background-repeat: no-repeat;
 background-size: cover;
-min-height: 67rem;
+width: 100%;
+min-height:1000px
+
 
 }
 /*HAMBURGER MENU*/
 .container-hamb {
     display: inline-block;
+    position: fixed;
+    top:0;
+    left:0;
     cursor: pointer;
-    background-color: rgb(138,104,19);
+    background-color:#8a6813;
     width: 4rem;
     height: 4rem;  
   }
@@ -26,7 +35,6 @@ min-height: 67rem;
   }
   
   .bar1, .bar2, .bar3 {
-
     text-align: center;
     width: 2rem;
     height: 5px;
@@ -34,14 +42,11 @@ min-height: 67rem;
     margin:6px ;
     transition: 0.4s;
   }
-  
-  .change .bar1 {
+   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
   }
-  
   .change .bar2 {opacity: 0;}
-  
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
@@ -70,4 +75,19 @@ min-height: 67rem;
     top:0;
     left:0
 
+}
+/*SCROLL MENU*/
+.margin20{
+    margin-top:20px;
+}
+.margin10{
+    margin-top:10px;
+}
+.mybtn2{
+    background-color: #8a6813;
+    color: white;
+    font-weight: bold;
+    width: 11rem;
+    height: 2.5rem;
+    border-style: none;
 }
