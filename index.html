@@ -8,11 +8,18 @@
     <!--
         <a href="https://icons8.com/icon/82486/beef-burger">Beef Burger icon by Icons8</a> free favicon
     -->
+    
+    
+    <!--FAVICON-->
     <link rel="shortcut icon" href="https://img.icons8.com/cotton/64/000000/beefburger.png" type="image/x-icon">
-    <!--ROBOTO LINK-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!--social icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--BOOTSTRAP LINK-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--NORMALIZE CSS-->
+    <link rel="stylesheet" href="normalize.css">
     <!--CSS LINK-->
     <link rel="stylesheet" href="style.css">
     <title>My Restaurant</title>
@@ -23,52 +30,164 @@
     <!-- 
         <a href='https://www.freepik.com/free-photos-vectors/logo'>Logo vector created by freepik - www.freepik.com</a>
     -->
-    <div class="page--container">
+    
     <!--HAMBURGER MENU-->
-    <div class="container-hamb" onclick="openHamburger(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-    <!--RESERVATION MENU-->
+    
+    <!--RESERVATION MENU
     <button type="button" class="mybtn" onclick="#">RESERVATION</button>    
-
-    </div>  
-
-
+    </div>  -->
 
 <!--Create all the section-->
-
-
-<div class="container ">
-    
-    <div class="row">
-       
-        <div class="col">
-            <img src="pasta1.jpg" alt="pasta" width="500px">    
-        </div>
-    <div class="col">
-        <div class="container">
-            <div class="row margin20 ">
-                <h3 class="h3list margin20">My Restaurant</h5>
-                <h2 class="margin10">"A casual Restaurant 
-                located in the city center
-                of Liverpool"</h2>
+<div class="page--container">
+    <div class="hero">
+        <div class="hero-nav">
+            <div class="container-hamb" onclick="openHamburger(this)">
+                <div class="inner-hamburger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
-            
-                <div class="row">
-                <button class="mybtn2 margin20">LEARN MORE</button>
+            <div class="reservation-button-container">
+                <button type="button" class="mybtn" onclick="#">RESERVATION</button>        
+            </div>
+        </div>
+
+    </div><div class="scroll">
+        <p>SCROLL</p>
+        <p><i class="arrow down"></i></p></div>
+
+    <!--RESTURANT SECTION-->
+    
+        <section class="restaurant" >
+            <div class="grid-container ">
+             <div class="grid-item-left">
+              <div class="left-item">
+               <img class="basil" src="basil.jpg" alt="basil">
+              </div>
+            </div>
+            <div class="grid-item-right">
+                <h5 class="brown-text">My Restaurant</h5>
                 <div>
-            
-
+        
+                    <h2>A casual Restaurant </h2>
+                    <h2>located in the city center
+                    <h2>of Liverpool</h2>
+                </div>
+                    <button class="my-btn-2">VIEW MENU</button>
+            </div>
+            </div>
+        </section>
+<!--DIRTY BACKGROUND SECTION-->
+<section class="dirty-container">
+    <div class="grid-container-dirty">
+     <div class="grid-item-left-dirty">
+      <div class="left-item-dirty">
+                <h3 class="brown-text">News and Event</h3>
+                <h2 class="margin10">"Nice pasta night dinner"</h2>
+                <button class="my-btn-2 margin20">LEARN MORE</button>
         </div>
-        </div>
+      </div>
+        <div class="grid-item-right-dirty">
+         <div class="right-item-dirty">
+          <img src="farfalle.jpg" alt="farfalle"class="farfalle">    
+         </div>
+        </div>  
     </div>
-    </div> 
+</section>
+
+<!--LOUNGE SECTION-->
+<section class="lounge">
+  <div class="grid-container-lounge">
+    <div class="grid-item-left-lounge">
+      <div class="left-item-lounge"> 
+            <h5 class="brown-text">Event</h3>
+            <h2 class="marginb10" style="font-weight: bold;">Private dining</h2>
+            <p class="marginb10">Parties up to 40 guest may be seated in the private room</p>
+            <button class="my-btn-2 amrginb10">LEARN MORE</button>
+     </div>
+    </div>
+       <div class="right-item-lounge">
+           <span></span>
+       </div>
+    
 </div>
-</div>
+</section>
 
 
+<section class="team">
+
+<div class="grid-container-team">
+    <div class="emptydiv"></div>
+  <div class="grid-item-left-team">
+      <div class="leftup-item-team">
+       <img src="team-pictures.jpg" alt="team" class="teampicture">
+      </div>
+     <div class="leftdo-item-team">
+       <p class="bold">JOIN OUR TEAM</p>
+       <h4>We are always hiring and excited to add new talent to our team.</h3>
+       <span>LEARN MORE</span>
+     </div>
+    </div>
+     <div class="center-item-team">
+        <img src="pancakes.jpg" alt="pancakes" class="pancakes">
+     </div>
+      <div class="right-item-team">
+        <h3 class="bold">Sustainability</h3>
+        <p>Committed to the triple bottom line—people,
+           planet and profit—we do everything we
+           can to make our restaurant environment 
+           as healthy as possible. </p>
+           <span>LEARN MORE</span>
+       </div>
+     </div>
+</section> 
+</div>
+<!--FOOTER-->
+<footer>
+    <section class="footer">
+        <div class="grid-container-footer">
+            <!--address-->
+          <div class="grid-item-left-footer">
+             <div class="grid-item-address">
+              <h3>Address</h3>
+              <p>29 The Strand</p>
+              <p>Liverpool, L31SE</p>
+                <p>231 44 2311</p>
+            </p>
+            </div>
+          </div>
+                 <!--link to us-->
+            <div class="grid-item-center-link">
+                <a href="">Contact us</a>
+                <a href="">Join our team</a>
+                <a href="">FAQ</a>
+                <a href="">Sitemap</a>
+            </div>
+             <!--newsletter-->
+            <div class="grid-item-right-newsletter">
+                <h2>Newsletter</h2>
+                <input type="mail" name="mail" id="newsletter" placeholder="Enter your mail">
+                <button class="mybtn2">></button>
+            </div>
+         </div>
+                  </section>
+
+
+    <div class="social">
+        <a href=""><i class="fa fa-facebook-square" style="font-size:2rem; color:white"></i></a>
+        <!--Facebook-->
+        <!--Twitter-->
+        <a href=""><i class="fa fa-twitter" style="font-size:2rem; color:white"></i></a>
+        <!--Instagram-->
+        <a href=""><i class="fa fa-instagram" style="font-size:2rem; color:white"></i></a>
+        
+    </div>
+
+
+
+
+</footer>
 
 
 
