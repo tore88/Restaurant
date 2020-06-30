@@ -66,6 +66,11 @@ img {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
+  .container-hamb:hover{
+    background-color: rgb(83,62,11);
+    color: white;
+    font-weight: bold;
+  }
 
   /*RESERVATION BUTTON*/
 
@@ -81,7 +86,7 @@ img {
 .mybtn:hover{
     background-color: rgb(83,62,11);
     color: white;
-    font-weight: bold;
+    
 }
 
 /*SCROLL MENU*/
@@ -113,7 +118,12 @@ h2{
     width: 11rem;
     height: 2.5rem;
     border-style: none;
+    transition: width 2s;
 }
+.my-btn-2:hover{
+    width: 14rem;
+}
+
 /*RESTAURANT CONTAINER*/
 
 .restaurant>.grid-container{
@@ -260,6 +270,76 @@ grid-gap: 0.5rem;
 .social>a{
     padding: .5rem;
 }
+/*IMAGE HOVER*/
+img:hover {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 918px) {
+
+.restaurant>.grid-container{
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 0.5rem;
+}
+.grid-item-right{
+    display:grid;
+    grid-template-rows: 1fr;;
+}
+.restaurant-last{
+    margin-bottom: 150px;
+}
+.grid-item-left-dirty{
+    margin:0;
+   
+}
+
+.grid-container-dirty{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 0.5rem;
+    background-color: #f2f1e7;
+}
+.grid-container-lounge{ 
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap:0.5rem;
+    background-image: url(restaurant-box.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 70vh;  
+}
+.grid-container-team{
+    margin-top: 4rem;;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap:0.5rem;
+    min-height: 20rem;
+}
+.leftdo-item-team>span{
+    margin-bottom: 80px;
+}
+.grid-container-footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+/* tutto bene fino qui!*/
+/*on the picture with transform:scale(1.2)
+the function ease out doesnt work
+*/
+
+
+
 
 
 
