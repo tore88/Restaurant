@@ -6,6 +6,9 @@
     font-family: 'Raleway', sans-serif;
     
 }
+body{
+    transition: background-color 1s;
+}
 
 img {
     max-width:100%;
@@ -93,9 +96,14 @@ img {
 h2{
     font-size: 50px;
 }
-    .scroll{
+.scroll{
+    font-size: 1.5rem;
     text-align: center;
-    color: black;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    padding-bottom: 2rem;
 }
 .arrow {
     border: solid white;
@@ -123,6 +131,66 @@ h2{
 .my-btn-2:hover{
     width: 14rem;
 }
+/*OFF CANVAS*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #8a6813;
+    color:#8a6813;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;    
+    font-size: 25px;
+    color:white;
+    display: block;
+    
+  }
+
+  .open{
+      height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #8a6813;
+    color:white;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+  }
+  .open a {
+    padding: 8px 8px 8px 32px;    
+    font-size: 25px;
+    color:white;
+    display: block;
+    
+  }
+  .addNavbar{
+      margin-left: 250px;
+      padding: 0px;;
+
+  }
+    
+  #main {
+    transition: margin-left 1s;
+    
+    
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
 
 /*RESTAURANT CONTAINER*/
 
@@ -140,6 +208,11 @@ grid-gap: 0.5rem;
     width: 400px;
     height:550px;
     
+}
+.basil:hover{
+        transform: scale(1.05);
+        transform: rotate(3deg);
+        transition: 0.5s ;
 }
 .grid-item-left{
     justify-self: end;
@@ -170,6 +243,12 @@ grid-gap: 0.5rem;
     width:850px;
     padding: 3rem;
 }
+    .farfalle:hover {
+        transform: scale(1.05);
+        transform: rotate(3deg);
+        transition: 0.5s ;
+    }
+
 /*LOUNGE*/
 .grid-container-lounge{ 
     display: grid;
@@ -225,7 +304,7 @@ grid-gap: 0.5rem;
     margin-top:3rem;
     background-color: #8a6813;
     color:white;
-    height: 15rem;
+    min-height: 15rem;
 }
 
 .grid-container-footer{
@@ -270,15 +349,8 @@ grid-gap: 0.5rem;
 .social>a{
     padding: .5rem;
 }
-/*IMAGE HOVER*/
-img:hover {
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
+
+
 
 
 /* Extra small devices (phones, 600px and down) */

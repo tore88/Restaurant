@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="style.css">
     <title>My Restaurant</title>
 </head>
-<body>  
+<body id="main">  
 <!--   -->
     <!--LOGO -->
     <!-- 
@@ -33,16 +33,15 @@
     
     <!--HAMBURGER MENU-->
     
-    <!--RESERVATION MENU
-    <button type="button" class="mybtn" onclick="#">RESERVATION</button>    
-    </div>  -->
+  
 
 <!--Create all the section-->
 <div class="page--container">
     <div class="hero">
         <div class="hero-nav">
-            <div class="container-hamb" onclick="openHamburger(this)">
-                <div class="inner-hamburger">
+            <div class="container-hamb" onclick="myfnc(this);" >
+                
+                    <div class="inner-hamburger">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -52,10 +51,19 @@
                 <button type="button" class="mybtn" onclick="#">RESERVATION</button>        
             </div>
         </div>
+        <div class="scroll">
+            <span>SCROLL</span>
+            <p><i class="arrow down"></i></p></div>
+    </div>
+      <div id="mySidenav" class="sidenav"> 
+                <!-- <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a> -->
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+    
 
-    </div><div class="scroll">
-        <p>SCROLL</p>
-        <p><i class="arrow down"></i></p></div>
 
     <!--RESTURANT SECTION-->
     
@@ -213,10 +221,6 @@
 
 
 
-    <script>
-        function openHamburger(x) {
-          x.classList.toggle("change");
-        }
-        </script>
+    <script src="app.js"></script>
 </body>
 </html>
