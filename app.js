@@ -14,42 +14,15 @@ function openNav() {
     x.classList.toggle("change");
     
   }
-  
+ 
 
-
-  
-   
-//   var num=0;
-// function myfnc(x){
-//    openHamburger(x);
-
-
-
-//     if(num==0){
-//         openNav();
-       
-//         num=1;
-//     }else if(num=1){
-//         openHamburger(x);
-//          closeNav();
-        
-//          num=0;
-//     }
-// }
-
-function myfnc(x) {
+function myFnc(x) {
     openHamburger(x);
     const element = document.getElementById("mySidenav");
     const addMargin = document.getElementById("main");
     element.classList.toggle("sidenav");
     element.classList.toggle("open");
     addMargin.classList.toggle("addNavbar")
-
-    
-   
-   
-    
   } 
-
 
   

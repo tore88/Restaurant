@@ -1,13 +1,9 @@
-
 *{
     padding:0px;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     
-}
-body{
-    transition: background-color 1s;
 }
 
 img {
@@ -19,7 +15,7 @@ img {
 /*NAV*/
 .hero{
     height:100vh;
-    background-image: url(background.jpeg);
+    background-image: url(background-index.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -110,6 +106,9 @@ h2{
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
+    background-color: transparent;
+    border: none;
+
   }
   
 .down {
@@ -184,7 +183,6 @@ h2{
     
     
   }
-  
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -349,7 +347,10 @@ grid-gap: 0.5rem;
 .social>a{
     padding: .5rem;
 }
-
+.mybtn2{
+    background-color: transparent;
+    border: none;
+}
 
 
 
@@ -405,26 +406,145 @@ grid-gap: 0.5rem;
     align-items: center;
     
 }
-/* tutto bene fino qui!*/
-/*on the picture with transform:scale(1.2)
-the function ease out doesnt work
-*/
+.about--text{
+    margin: -50px -80px;
+}
+.location{
+    margin-right:-120px;
+}
+/*MEDIA END*/
+}
+/* ABOUT PAGE*/
+.hero-about{
+    height:40vh;
+    background-image: url(whatsnew-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    position:relative;
+}
+.about--text{
+    position: absolute;
+    top:11rem;
+    left: 40%;
+    width: 250px;
+    height: 100px;
+    background-color: white;
+}
+.about--text>h1{
+    font-size: 60px;
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    font-weight: bold
+    ;
+    
+}
+/*ABOUT PAGE */
+
+.about-img{
+    width: 756px;
+}
+
+.about--us{
+    background-color: #f0f0f0;
+}
+/*WHERE page*/
+
+.hero-where{
+    background-color: black;
+    height: 26rem;
+}
+/*CONTACT PAGE SAME AS LOCATION*/
+.location,
+.contact--page{
+    width:20rem;
+    height: 7rem;
+    background-color: black;
+    color: black;
+    position: absolute;
+    top:10rem;
+    right:40%;
+}
+
+.location>h1{
+    font-weight: bold;
+    font-size: 60px;
+    padding-left: 9px;
+    text-align: center;
+}
+/*CONTACT page*/
+.hero-contact{
+    background-color:white;
+    height: 26rem;
+}
+
+.contact--page>h1{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    padding-left: 9px;
+    text-align: center;
+}
+
+.page--container--2,
+.contact--background{
+    width: 100%;
+}
+/*FORM CONTACT*/
+.contact--background{
+text-align: center;
+width:100%;
+}
+
+.form--contact{
+    width:30rem;
+    min-height: 18rem;
+    position: relative;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: inline-block;
+    border-top: 2px solid gray;
+    border-right: 2px solid gray;
+    border-bottom:1px solid gray;
+    border-left: 1px solid gray;
+    border-radius: 2rem;
+    box-shadow: 5px 10px 8px 8px #888888
+
+   
+}
+.form--items{   
+    width:80%;
+    height: 2rem;
+    margin-top: 1rem;
+}
+textarea{
+    resize: none;
+    width: 80%;
+    height: 3rem;
+    margin-left: 5rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 918px) {
+
+.contact--page{
+    right: 10%;
+}
+.form--contact{
+    width:20rem;
+}
+textarea{
+    margin-left:3rem;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -442,5 +562,4 @@ the function ease out doesnt work
 }
 .bold{
     font-weight: bold;
-}
 }
