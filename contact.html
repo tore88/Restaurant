@@ -72,11 +72,11 @@
                <h1 class="Contact us">Contact us</h1>
                 <div class="form--items">
                     <label for="name" class="name">Name </label>
-                    <input type="text" name="name" class="input" >
+                    <input type="text"  name="fname" id="fname" class="input" >
                 </div>
                 <div class="form--items">
-                    <label for="mail" class="mail">e-mail</label>
-                    <input type="mail" name="mail" class="mail" placeholder="e-mail" >
+                    <label for="email" class="email">e-mail</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form--items">
                     <label for="purpose" class="purpose">Purpose </label>
@@ -89,20 +89,15 @@
                         </select>
                 </div>
                    <div class="form--items">
-                       <textarea class="text-area" class="text-area"  rows="4" cols="50"></textarea>
+                       <textarea class="text-area" id="text-area" class="text-area"  rows="4" cols="50"></textarea>
                    </div> 
+                   <div class="form--items">
+                    <button type="button" class="btn btn-light" onclick="formValue()">Submit</button>
+                   </div>
                 </div>
               </div>
+            </div>            
             </div>
-
-
-
-
-
-            
-            </div>
-
-
 
             <footer>
                 <section class="footer">

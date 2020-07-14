@@ -25,4 +25,17 @@ function myFnc(x) {
     addMargin.classList.toggle("addNavbar")
   } 
 
+  var formValue= ()=>{
+    
+    let name,email,purpose,text;
+    name=document.getElementById('fname').value;
+    email=document.getElementById('email').value;
+    purpose=document.getElementById('purpose').value;
+    text=document.getElementById('text-area').value;
+
+    alert(`Thank's ${name},your request has been submit, your mail ${email} and you message:"${text}"` )
+     }
+
+
+
   

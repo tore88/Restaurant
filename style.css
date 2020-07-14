@@ -175,7 +175,6 @@ h2{
   .addNavbar{
       margin-left: 250px;
       padding: 0px;;
-
   }
     
   #main {
@@ -472,6 +471,7 @@ grid-gap: 0.5rem;
     font-size: 60px;
     padding-left: 9px;
     text-align: center;
+    color:white;
 }
 /*CONTACT page*/
 .hero-contact{
@@ -500,7 +500,7 @@ width:100%;
 
 .form--contact{
     width:30rem;
-    min-height: 18rem;
+    min-height: 21rem;
     position: relative;
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -510,9 +510,7 @@ width:100%;
     border-bottom:1px solid gray;
     border-left: 1px solid gray;
     border-radius: 2rem;
-    box-shadow: 5px 10px 8px 8px #888888
-
-   
+    box-shadow: 5px 10px 8px 8px #888888   
 }
 .form--items{   
     width:80%;
@@ -525,7 +523,22 @@ textarea{
     height: 3rem;
     margin-left: 5rem;
 }
-
+.btn-light{
+    border:1px solid gray;
+    margin-top:5px;
+    margin-left:2rem;
+}
+/*MAPS*/
+.map-container-google{
+   width:650px;
+   height: 650px;
+}
+  iframe {
+    box-shadow: 3px 5px 8px grey;
+    display: block;
+    width:100%;
+    height: 100%;
+  }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 918px) {
 
@@ -538,14 +551,11 @@ textarea{
 textarea{
     margin-left:3rem;
 }
-
-
-
-
-
-
+.map-container-google{
+    width:300px;
+    height: 300px;
+ }
 }
-
 
 
 
